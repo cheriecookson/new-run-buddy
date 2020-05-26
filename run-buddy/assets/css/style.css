@@ -74,6 +74,14 @@ header {
     background-position: center;
     position: relative;
   }
+
+  .hero-cta {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+  }
  
   .hero-form {
     border: 3px solid #024e76;
