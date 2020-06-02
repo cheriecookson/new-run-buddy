@@ -336,6 +336,63 @@ header {
     justify-content: space-around;
   }
 
+  /* Beginning of animation css */
+
+  .trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+    background-size: cover;
+  }
+
+  .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+
+  }
+
+  .trainer-img {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    }
+
+    .trainer-img h3 {
+      position: relative;
+      font-size: 28px;
+      margin-bottom: 5px;
+      z-index: 9998;
+      top: 200px;
+      transition: 0.6;
+    }
+    
+    .trainer-img h4 {
+      position: relative;
+      font-size: 22px;
+      z-index: 9997;
+      top: 200px;
+      transition: 0.6;
+    }
+
+    .trainer-img::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background:linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.0;
+      transition: color 0.5s;
+      opacity: 1;
+
+    }
+
+
+
+  /* End of animation css */  
+
   .trainer {
     margin: 0 auto 20px auto;
     background: var(--secondary-color);
@@ -343,11 +400,6 @@ header {
     Flex: 1
   }
 
-  .trainer img {
-    width: 100%;
-    
-  }
-  
   .trainer-bio {
     padding: 25px;
     line-height: 1.3;
